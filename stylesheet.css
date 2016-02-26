@@ -1,45 +1,76 @@
-body{
+body {
   background-color: #3F51B5;
 }
-#calculator-body{
-  height: 400px;
-  width: 280px;
-  margin: auto;
-  margin-top: 30px;
-  background-color: black;
+
+*{
+  font-family: Roboto Mono;
+}
+
+#calculator-body {
+  height: 700px;
+  width: 437.5px;
+  margin: 5% auto 0% auto;
   border-radius: 3px;
   background-color: #880E4F;
-  box-shadow: 1px 1px 7px  black;
+  box-shadow: 1px 1px 7px black;
 }
-#screen{
-  height: 50px;
-  width: 264px;
-  margin-left: 8px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  background-color: #F3E5F5;
-  display: inline-block;
+
+#screen {
+  height: 12.5%;
+  width: 90%;
+  margin: 5%;
   border-radius: 3px;
+  background-color: #F3E5F5;
+  box-shadow: 1px 1px 5px black;
   text-align: right;
-  line-height: 50px;
-  vertical-align: center;
-  font-family: Roboto Mono;
+  font-size: 300%;
+  display: inline-block;
 }
-#button-container{
-  width: 268px;
-  margin-left: 4px;
-  margin-right: auto;
+  #screen:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+#button-container {
+  height: 77.5%;
+  width: 90%;
+  margin: 0% 5% 5% 5%;
 }
-.calculator-button{
-  height: 60px;
-  width: 60px;
-  margin-left: 4px;
-  margin-bottom: 4px;
-  background-color: #F3E5F5;
+
+.row {
+  height: 18%;
+  width: 102%;
+  margin-bottom: 4%;
+}
+
+.calculator-button {
+  height: 100%;
+  width: 23%;
+  float: left;
+  margin-right: 2%;
   border-radius: 3px;
-  font-size: 20px;
-  font-family: Roboto Mono;
+  background-color: #F3E5F5;
+  box-shadow: 1px 1px 5px black;
+  font-size: 150%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
 }
-#eq-button{
-  width: 128px;
+  
+  .calculator-button:hover {
+    text-decoration: none;
+  }
+
+
+  .calculator-button:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+#eq-button {
+  width: 48%;
 }
