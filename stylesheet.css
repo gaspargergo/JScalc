@@ -25,6 +25,7 @@ body {
   text-align: right;
   font-size: 300%;
   display: inline-block;
+  overflow: auto;
 }
   #screen:before {
     content: '';
